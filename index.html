@@ -20,10 +20,8 @@
   <meta name="twitter:image" content="img/bokasoka_logo.png">
 
   <!-- Bootstrap CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/theme.css" rel="stylesheet">
-  <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
   <title>Bokasoka.net - Home</title>
 
@@ -44,32 +42,27 @@
       margin-bottom: 100px;
     }
 
-    #content div.col-md-4 {
+    #content .card {
       text-align: center;
       padding: 30px;
       background-color: rgba(0, 0, 0, 0.8);
       border-radius: 10px;
       margin-bottom: 20px;
       transition: transform 0.3s ease;
+      color: #fff;
     }
 
-    #content div.col-md-4:hover {
+    #content .card:hover {
       transform: scale(1.05);
     }
 
-    #content div.col-md-4 h4 {
-      color: #fff;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    #content div.col-md-4 h4 a {
+    #content .card h4 a {
       color: #fff;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    #content div.col-md-4 h4 a:hover {
+    #content .card h4 a:hover {
       color: #1d3b70;
     }
 
@@ -88,10 +81,6 @@
     @media only screen and (max-width: 600px) {
       #content {
         margin-top: 150px !important;
-      }
-
-      #content div.col-md-4 {
-        margin-top: 10px;
       }
     }
 
@@ -197,22 +186,27 @@
     <div class="row">
       <!-- Content Sections -->
       <div class="col-md-4">
-        <h4><a href="http://198.20.20.20/NAS1/New_Collection">New Releases</a></h4>
-        <h4><a href="http://198.20.20.20/index.php">Movies Data</a></h4>
-        <h4><a href="http://198.20.20.20/NAS1">Bokasoka File</a></h4>
+        <div class="card">
+          <h4><a href="http://198.20.20.20/NAS1/New_Collection">New Releases</a></h4>
+          <h4><a href="http://198.20.20.20/index.php">Movies Data</a></h4>
+          <h4><a href="http://198.20.20.20/NAS1">Bokasoka File</a></h4>
+        </div>
       </div>
       <div class="col-md-4">
-        <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/Bollywood_Movies/">Hindi Movies</a></h4>
-        <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/South_Indian_Movies/Telegu_Tamil/">South Indian Movies</a></h4>
-        <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/South_Indian_Movies/Malayalam_Movies/">Malayalam Movies</a></h4>
+        <div class="card">
+          <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/Bollywood_Movies/">Hindi Movies</a></h4>
+          <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/South_Indian_Movies/Telegu_Tamil/">South Indian Movies</a></h4>
+          <h4><a href="http://198.20.20.20/NAS1/Bollywood_South_Indian_Movies/South_Indian_Movies/Malayalam_Movies/">Malayalam Movies</a></h4>
+        </div>
       </div>
       <div class="col-md-4">
-        <h4><a href="http://198.20.20.20/NAS1/Hollywood_Movies/">Hollywood Movies</a></h4>
-        <h4><a href="http://198.20.20.20/NAS1/Animation_Movies/">Animation Movies</a></h4>
-        <h4><a href="http://198.20.20.20/NAS1/PC_Games/">PC Games</a></h4>
+        <div class="card">
+          <h4><a href="http://198.20.20.20/NAS1/Hollywood_Movies/">Hollywood Movies</a></h4>
+          <h4><a href="http://198.20.20.20/NAS1/Animation_Movies/">Animation Movies</a></h4>
+          <h4><a href="http://198.20.20.20/NAS1/PC_Games/">PC Games</a></h4>
+        </div>
       </div>
       <!-- Additional Content -->
-      <!-- Add more sections as required -->
     </div>
   </div>
   <!-- Footer -->
@@ -223,6 +217,7 @@
   </div>
 
   <!-- Bootstrap JS and dependencies -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
