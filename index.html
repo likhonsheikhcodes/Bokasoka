@@ -35,6 +35,53 @@
       min-height: 100vh;
       background-attachment: fixed;
       font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    .top-bar {
+      background-color: rgba(29, 59, 112, 0.9);
+      padding: 10px 0;
+    }
+
+    .top-bar .col-lg-6 {
+      display: flex;
+      align-items: center;
+    }
+
+    .top-bar .col-lg-6 small {
+      margin-right: 20px;
+    }
+
+    .top-bar .col-lg-6 a {
+      color: #fff;
+      margin-left: 15px;
+    }
+
+    .navbar {
+      background-color: rgba(29, 59, 112, 0.9);
+    }
+
+    .navbar-brand img {
+      height: 48px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin: 0 15px;
+    }
+
+    .nav-link:hover {
+      color: #1d3b70 !important;
+    }
+
+    .btn-primary {
+      background-color: rgba(29, 59, 100, 0.99);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d3b70;
     }
 
     #content {
@@ -49,7 +96,6 @@
       border-radius: 10px;
       margin-bottom: 20px;
       transition: transform 0.3s ease;
-      color: #fff;
     }
 
     #content .card:hover {
@@ -88,11 +134,17 @@
       height: 400px;
       object-fit: cover;
     }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
   <!-- Top Bar -->
-  <div class="container-fluid fixed-top px-0" style="background-color: rgba(29, 59, 112, 0.9);">
+  <div class="container-fluid fixed-top px-0">
     <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
       <div class="col-lg-6 px-5 text-start">
         <small><i class="fa fa-map-marker-alt me-2"></i>Jessore, Bangladesh</small>
@@ -110,7 +162,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5">
       <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
         <h1 class="fw-bold text-primary m-0">
-          <img src="img/bokasoka_logo.png" alt="Bokasoka Logo" style="height: 48px;">
+          <img src="img/bokasoka_logo.png" alt="Bokasoka Logo">
         </h1>
       </a>
       <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -132,7 +184,7 @@
           </div>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="http://bokasoka.net" class="btn py-2 px-3" style="background-color: rgba(29, 59, 100, 0.99); color: #fff;">
+        <a href="http://bokasoka.net" class="btn btn-primary py-2 px-3">
           <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
             <i class="fa fa-arrow-right"></i>
           </div>
